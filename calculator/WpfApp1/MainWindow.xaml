@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Calculator" Height="770" Width="420"
+        ResizeMode="NoResize">
+
+    <Grid Background="#FF000A1F" Margin="5,5,5,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="back" Content="⇧" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="305,335,0,0" Height="90" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Monotype Corsiva" FontSize="36" OpacityMask="#FFFF9538" Click="ButtonBack" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="_4" Content="÷" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="295,270,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" Click="ButtonDo"/>
+        <Button x:Name="_5" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="295,495,0,0" Height="145" Background="#FFFF730A" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="36" OpacityMask="#FFCD9797" Click="ButtonEquals" Foreground="White"/>
+        <Button x:Name="_1_Copy" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,270,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonDo"/>
+        <Button x:Name="_1_Copy1" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,270,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonDo"/>
+        <Button x:Name="_1_Copy2" Content="x" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,270,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonDo"/>
+        <Button x:Name="_1_Copy3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,345,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="20" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy4" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,345,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy5" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,345,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,420,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy7" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,495,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy8" Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,570,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonDot"/>
+        <Button x:Name="_1_Copy9" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,420,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy10" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,495,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy11" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,420,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy12" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,495,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy13" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,570,0,0" Height="70" Background="#FFB1A9A9" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonNumber"/>
+        <Button x:Name="_1_Copy14" Content="%" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="295,192,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonPercent"/>
+        <Button x:Name="_1_Copy15" Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="295,420,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538"  Foreground="#FFFF7700" Click="ButtonC"/>
+        <TextBlock x:Name="BlockMain" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,145,0,0" Height="35" Width="375" Foreground="White" FontFamily="Verdana" FontSize="30" Text="0"/>
+        <TextBlock x:Name="Block2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,100,0,0" Height="35" Width="375" Foreground="#FF9C9C9C" FontFamily="Verdana" FontSize="30"/>
+        <TextBlock x:Name="BlockDo" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,55,0,0" Height="35" Width="375" Foreground="#FF9C9C9C" FontFamily="Verdana" FontSize="30"/>
+        <TextBlock x:Name="Block1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0" Height="35" Width="375" Foreground="#FF9C9C9C" FontFamily="Verdana" FontSize="30"/>
+        <Button x:Name="_1_Copy16" Content="MC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,645,0,0" Height="70" Background="#FF424768" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonM" Foreground="Black"/>
+        <Button x:Name="_1_Copy17" Content="M-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,645,0,0" Height="70" Background="#FF424768" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonM" Foreground="Black"/>
+        <Button x:Name="_1_Copy18" Content="M+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,645,0,0" Height="70" Background="#FF424768" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonM" Foreground="Black"/>
+        <Button x:Name="_1_Copy19" Content="MR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="295,645,0,0" Height="70" Background="#FF424768" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538"  Foreground="Black" Click="ButtonM"/>
+        <Button x:Name="_1_Copy20" Content="√" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,192,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonSqrt"/>
+        <Button x:Name="_1_Copy21" Content="^2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="105,192,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonSqu"/>
+        <Button x:Name="_1_Copy22" Content="1/x" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="200,192,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" OpacityMask="#FFFF9538" Click="ButtonDevine"/>
+        <Button x:Name="_4_Copy" Content="±" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,570,0,0" Height="70" Background="#FFD7D7D7" BorderBrush="{x:Null}" FontFamily="Verdana" FontSize="25" Click="ButtonSign"/>
+
+    </Grid>
+</Window>
